@@ -1,0 +1,34 @@
+/*!
+ * Ublue jQuery Slideshow
+ *
+ * Copyright (c) 2011, 梦幻神化 
+ * http://www.bluesdream.com
+ *
+ * Date: 2011.10.26
+ *
+ * 请保留此信息，如果您有修改或意见可通过网站给我留言，也可以通过邮件形式联系本人。
+ * Mail: hello@bluesdream.com
+ */
+body,ul,li,img,div{ margin:0px; padding:0px;}
+body{ font:12px/1.5 "\5fae\8f6f\96c5\9ed1","\5B8B\4F53", tahoma, arial; background:white; background:url(../images/blackBg.jpg);}
+ul,ol,li{ list-style-type:none;}
+img,a img{ border:0;}
+
+.slideshow{ width:950px; height:342px; margin:50px auto; position:relative;}
+.slideshow-area{ width:930px; height:296px; border:10px solid #FFF; overflow:hidden;}
+.slideshow-area li{ position:absolute;}
+.slideshow-bullets{ width:950px; height:26px; background:url(../images/bottom_shadow.png) center no-repeat; position:absolute;}
+.slideshow-bullets ul{ width:500px; margin:10px auto 0; overflow:hidden; text-align:center;}
+.slideshow-bullets li{ width:12px; height:14px; background:url(../images/bullets.png) 0 0 no-repeat; display:inline-block; margin-right:6px; font-size:0px; cursor:pointer; overflow:hidden;}
+.slideshow-bullets li{ *display:inline;}
+.slideshow-bullets .current{ background-position:0 -14px;}
+
+.prev,.next{ display:block; width:42px; height:42px; text-indent:-9999px; background:url(../images/prev_next.png) no-repeat; position:absolute; top:135px; cursor:pointer; z-index:10;}
+.prev{ background-position:0 0; left:20px;}
+.prev:hover{ background-position:0 -44px;}
+.next{ background-position:-44px 0; right:20px;}
+.next:hover{ background-position:-44px -44px;}
+
+/*ad*/
+.footer{ width:950px; margin:20px auto; background:rgba(0, 0, 0, 0.1); border:1px rgba(255, 255, 255, 0.2) solid; text-align:center; color:#FFF; text-shadow:1px 1px 1px #000;}
+.footer a{ color:white; text-decoration:none;}
